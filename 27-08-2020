@@ -1,0 +1,80 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+	char s1[20];
+	char s2[20];
+	int i,j,count=0;
+	printf("enter string s1:");
+	gets(s1);
+	printf("\nenter string s2;");
+	gets(s2);
+	int n=strlen(s1);
+	int m=strlen(s2);
+	printf("\ns1 string arrange in order\n");
+	for(i=0;i<n-1;i++)
+	{
+		for(j=i+1;j<n;j++)
+		{
+			char temp1;
+			if(s1[i]>s1[j])
+			{
+				temp1=s1[i];
+				s1[i]=s1[j];
+				s1[j]=temp1;
+			}
+		}
+	}
+	puts(s1);
+	printf("\ns2 string arrange in order\n");
+	for(i=0;i<m-1;i++)
+	{
+		for(j=i+1;j<m;j++)
+		{
+			char temp2;
+			if(s2[i]>s2[j])
+			{
+				temp2=s2[i];
+				s2[i]=s2[j];
+				s2[j]=temp2;
+			}
+		}
+	}
+	puts(s2);
+	for(i=0;s1[i]!='\0';i++)
+	{
+		if (s1[i]==s2[i])
+		count++;
+	}
+	if(count==n)
+	printf("It is a annagram");
+	else
+	printf("It is not a anagaram");
+	
+}
+
+Output1:
+enter string s1: angel
+
+enter string s2; angle
+
+s1 string arrange in order
+ aegln
+
+s2 string arrange in order
+ aegln
+It is a annagram
+
+
+output 2:
+enter string s1: prasanna
+
+enter string s2; prasanthi
+
+s1 string arrange in order
+ aaannprs
+
+s2 string arrange in order
+ aahinprst
+It is not a anagaram
