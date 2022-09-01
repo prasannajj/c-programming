@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+int cal(int x);
+int main()
+{
+
+	int x,m;
+	printf("enter the number");
+	scanf("%d",&x);
+	m= cal(x);
+	if(m==0)
+	printf("\nEVEN");
+	else
+	printf("\nODD");
+}
+int cal(int x)
+{
+	if(x%2==0)
+	return 0;
+	else
+	return 1;
+}
+Output:
+enter the number 6
+EVEN
