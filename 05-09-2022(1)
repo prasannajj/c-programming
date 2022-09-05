@@ -1,0 +1,20 @@
+#include<conio.h>
+int main()
+{
+	int i=0,n;
+	scanf("%d",&n);
+	start:
+		i=i+1;
+		if(i<=n&&i>0)
+		{
+			printf("%d\n",i);
+		}
+		goto start;
+}
+Output:
+5
+1
+2
+3
+4
+5
