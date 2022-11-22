@@ -1,0 +1,25 @@
+sno=int(input("student number: "))
+name=input("student name: ")
+gender=input("gender: ")
+group=input("gorup: ")
+address=input("address: ")
+phno=int(input("phone number: "))
+
+OUTPUT 1:
+
+student number: 45
+student name: kavya sri
+gender: female
+gorup: MSCS
+address: bhimavaram
+phone number: 1234567890
+
+
+OUTPUT 2:
+
+student number: 34
+student name: Arjun
+gender: male
+gorup: MECS
+address: kakinada
+phone number: 9876543214
